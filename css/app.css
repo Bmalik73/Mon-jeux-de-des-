@@ -19,7 +19,7 @@
 body {
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
-    font-family: consolas;
+    font-family: Incosolata, Arial, Helvetica, sans-serif;
     font-weight: 300;
     position: relative;
     height: 100vh;
@@ -71,8 +71,8 @@ body {
 }
 
 .active {     background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
-}
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);}
+
 .active .player-name { font-weight: 300; }
 
 .active .player-name::after {
