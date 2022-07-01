@@ -245,5 +245,8 @@ i {
         top: -70px;
         right: 3px;
     }
-
+    .dice {
+        top: 224px;
+        height: 56px;
+    }
 }
