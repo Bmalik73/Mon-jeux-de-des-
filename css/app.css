@@ -16,13 +16,20 @@
     clear: both;
 }
 
+html{
+    width: 100%;
+    height: 100%;
+}
+
 body {
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
+    background-size: cover;
     font-family: Incosolata, Arial, Helvetica, sans-serif;
     font-weight: 300;
     position: relative;
-    height: 100vh;
+    height: 100vh; 
+    width: 100vw;
     color: rgb(0 243 255);
 }
 
@@ -34,7 +41,7 @@ body {
     transform: translate(-50%, -50%);
     background-color: rgb(20 86 185);
     box-shadow: 0px 0px 70px rgb(0 243 255);
-    border-radius: 140px;
+    border-radius: 24px;
     overflow: hidden;
 }
 
@@ -156,3 +163,87 @@ i {
 
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
+
+/**********************************************
+*** RESPONSIVE
+**********************************************/
+
+@media screen and (max-width: 1100px) {
+    .wrapper {
+        width: 715px;
+    }
+    .active .player-name::after {
+        top: 260px;
+        right: 60px;
+    }
+    .player-current-box {
+    width: 100%;
+    }
+
+}
+@media screen and (max-width: 768px) {
+
+    .wrapper {
+        position: relative;
+        width: 80%;
+    }
+    .player-name {
+        font-size: 32px;
+        margin-left: auto;
+    }
+    .player-0-panel, .player-1-panel { 
+        padding: 48px 0;
+    }
+    .group-btn {
+        position: relative;
+        bottom: 47px;
+    }
+    .group-btn button {
+        width: 100px;
+        font-size: 16px;
+        padding: 8px;
+        border-radius: 8px; 
+    }
+    .player-current-box {
+        border-radius: 8px;
+    }
+    .active .player-name::after {
+        top: 208px;
+        right: 9px;
+    }}
+
+@media screen and (max-width: 500px) {
+    .wrapper {
+        position: relative;
+        width: 80%;
+    }
+    .player-name {
+        font-size: 24px;
+        margin-left: auto;
+    }
+    .player-1-panel, .player-0-panel {
+        position: relative;
+        height: 100%;
+    }
+    .player-current-box {
+        position: relative;
+        border-radius: 0;
+        width: 100%;
+        top: 0;
+    }
+    .player-0-panel, .player-1-panel { 
+        padding: 48px 0 70px 0;
+    }
+
+    .group-btn button {
+        width: 100px;
+        font-size: 14px;
+        padding: 8px;
+        border-radius: 8px; 
+    }
+    .active .player-name::after {
+        top: -70px;
+        right: 3px;
+    }
+
+}
